@@ -11,5 +11,40 @@ Transferencia::Transferencia(int id, float valorTransf, std::string tipoTransf, 
 }
 
 Transferencia::~Transferencia(){
-    
+
+}
+
+int Transferencia::GetID(){
+    return m_ID;
+}
+void Transferencia::SetID(int id){
+    m_ID = id;
+}
+
+float Transferencia::GetValorTransf(){
+    return m_valorTransf;
+}
+void Transferencia::SetValorTransf(float valorTransf){
+    m_valorTransf = valorTransf;
+}
+
+std::string Transferencia::GetTipoTransf(){
+    return m_tipoTransf;
+}
+void Transferencia::SetTipoTransf(std::string tipoTransf){
+    m_tipoTransf = tipoTransf;
+}
+
+contaBancaria Transferencia::GetEmissor(){
+    return m_emissor;
+}
+void Transferencia::SetEmissor(contaBancaria emissor){
+    m_emissor = emissor;
+}
+
+contaBancaria Transferencia::GetReceptor(){
+    return m_receptor;
+}
+void Transferencia::SetReceptor(contaBancaria receptor){
+    m_receptor = receptor;
 }

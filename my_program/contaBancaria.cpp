@@ -50,3 +50,10 @@ float contaBancaria::GetSaldo(){
 void contaBancaria::SetSaldo(float saldo){
     m_saldo = saldo;
 }
+
+bool contaBancaria::IsTheSameAccount(contaBancaria another){
+    if (this->GetConta() == another.GetConta() && this->GetAgencia() == another.GetAgencia()){
+        return true;
+    }
+    return false;
+}

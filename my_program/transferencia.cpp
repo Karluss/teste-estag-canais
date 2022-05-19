@@ -49,7 +49,7 @@ void Transferencia::SetReceptor(contaBancaria receptor){
     m_receptor = receptor;
 }
 
-bool Transferencia::IsTransferenceValidate(contaBancaria emissor, contaBancaria receptor){
+bool Transferencia::IsTransferenceValid(contaBancaria emissor, contaBancaria receptor){
     if (!emissor.IsTheSameAccount(receptor)){
         return false;
     }
@@ -87,4 +87,14 @@ bool Transferencia::checksTEDTransference(){
         return false;
     }
     return true;
+}
+
+void Transferencia::FinishTransference(contaBancaria emissor, contaBancaria receptor){
+    if (this->IsTransferenceValid(emissor, receptor)){
+        emissor.SetSaldo(emissor.GetSaldo()-this->GetValorTransf()); //Retira valor da transferencia do saldo do emissor
+        receptor.SetSaldo(receptor.GetSaldo()+this->GetValorTransf()); //Adiciona valor da transferencia ao saldo do receptor
+        std::cout << "Sua transferência foi realizada com sucesso!" << std::endl;
+        std::cout << "Saldo do emissor: " << emissor.GetSaldo() << std::endl;
+        std::cout << "Saldo do receptor: " << receptor.GetSaldo() << std::endl;
+    }
 }

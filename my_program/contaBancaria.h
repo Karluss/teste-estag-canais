@@ -24,6 +24,7 @@ public:
     void SetSaldo(float saldo);
 
     bool IsTheSameAccount(contaBancaria another);
+
 private:
     std::string m_nomeCliente;
     std::string m_CPF;

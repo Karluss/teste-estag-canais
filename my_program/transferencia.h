@@ -24,10 +24,12 @@ public:
     contaBancaria GetReceptor();
     void SetReceptor(contaBancaria receptor);
 
-    bool IsTransferenceValidate(contaBancaria emissor, contaBancaria receptor);
+    bool IsTransferenceValid(contaBancaria emissor, contaBancaria receptor);
     bool checksPIXTransference();
     bool checksDOCTransference();
     bool checksTEDTransference();
+
+    void FinishTransference(contaBancaria emissor, contaBancaria receptor);
     
 private:
     int m_ID;

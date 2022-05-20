@@ -11,10 +11,6 @@ contaBancaria::contaBancaria(std::string nomeCliente,std::string CPF,int agencia
 
 }
 
-contaBancaria::~contaBancaria(){
-    
-}
-
 std::string contaBancaria::GetNomeCliente(){
     return m_nomeCliente;
 }

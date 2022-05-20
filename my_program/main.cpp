@@ -37,8 +37,9 @@ int main(){
     std::string CPFReceptor = array[10];
 
     contaBancaria Emissor(nomeEmissor,CPFEmissor,agenciaEmissor,contaEmissor);
-    //contaBancaria Receptor(nomeReceptor,CPFReceptor,agenciaReceptor,contaReceptor);
-    //Transferencia transferencia(idTransf,valorTransf,tipoTransf,contaEmissor,contaReceptor);
+    contaBancaria Receptor(nomeReceptor,CPFReceptor,agenciaReceptor,contaReceptor);
+    Transferencia transferencia(idTransf,valorTransf,tipoTransf,Emissor,Receptor);
 
+    transferencia.makeTransference(Emissor,Receptor);
 }
 

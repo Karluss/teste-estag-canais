@@ -6,8 +6,6 @@
 class contaBancaria{
 public:
     contaBancaria(std::string nomeCliente,std::string CPF,int agencia,int conta);
-    ~contaBancaria();
-
     std::string GetNomeCliente();
     void SetNomeCliente(std::string nomeCliente);
 

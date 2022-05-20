@@ -7,7 +7,6 @@
 class Transferencia{
 public:
     Transferencia(int id, float valorTransf, std::string tipoTransf, contaBancaria emissor, contaBancaria receptor);
-    ~Transferencia();
 
     int GetID();
     void SetID(int id);
@@ -29,7 +28,7 @@ public:
     bool checksDOCTransference();
     bool checksTEDTransference();
 
-    void FinishTransference(contaBancaria emissor, contaBancaria receptor);
+    void makeTransference(contaBancaria emissor, contaBancaria receptor);
     
 private:
     int m_ID;

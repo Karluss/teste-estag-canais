@@ -1,3 +1,35 @@
+## Como rodar o código
+
+O código funcionou como esperado em três ambientes: **Terminal do Linux**, **Visual Studio Code** e **Visual Studio 2019** .
+
+-----------------------------------------------------------------------------------------------------------
+
+**Terminal do Linux (mais recomendado)**
+
+Para rodar neste ambiente, entre na pasta "my_program" e execute a seguinte linha de código no terminal:
+
+`g++ main.cpp contaBancaria.cpp transferencia.cpp -o main`
+
+--------------------------------------------------------------------------------------------------------------
+
+**Visual Studio 2019**
+
+No Visual Studio, crie um Projeto e então procure a pasta desse projeto e coloque os arquivos do código lá. Então, use CTRL+F5 para rodar o código no ambiente.
+
+--------------------------------------------------------------------------------------------------------------
+
+**Visual Studio Code**
+
+Caso não rode como esperado, será necessário editar duas linhas de código:
+
+`#include "contaBancaria.h"` para `#include "contaBancaria.cpp"`
+
+`#include "transferencia.h"` para `#include "transferencia.cpp"`
+
+Assim, deve conseguir a saída esperada.
+
+--------------------------------------------------------------------------------------------------------------
+
 # teste-estag-canais
 
 ![alt text](https://static.vecteezy.com/system/resources/previews/003/326/613/non_2x/software-engineering-concept-for-website-and-mobile-site-vector.jpg)

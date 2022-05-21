@@ -2,8 +2,8 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include "contaBancaria.h"
-#include "transferencia.h"
+#include "contaBancaria.h" // Caso não rode no VS Code, troque esse trecho para ' #include "contaBancaria.cpp" '
+#include "transferencia.h" // Caso não rode no VS Code, troque esse trecho para ' #include "transferencia.cpp" '
 
 int main(){
     std::ifstream data("entrada.txt");

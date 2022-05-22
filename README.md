@@ -12,12 +12,6 @@ Para rodar neste ambiente, entre na pasta "my_program" e execute a seguinte linh
 
 --------------------------------------------------------------------------------------------------------------
 
-**Visual Studio 2019**
-
-No Visual Studio, crie um Projeto e então procure a pasta desse projeto e coloque os arquivos do código lá. Então, use CTRL+F5 para rodar o código no ambiente.
-
---------------------------------------------------------------------------------------------------------------
-
 **Visual Studio Code**
 
 Caso não rode como esperado, será necessário editar duas linhas de código:
@@ -27,6 +21,12 @@ Caso não rode como esperado, será necessário editar duas linhas de código:
 `#include "transferencia.h"` para `#include "transferencia.cpp"`
 
 Assim, deve conseguir a saída esperada.
+
+--------------------------------------------------------------------------------------------------------------
+
+**Visual Studio 2019**
+
+No Visual Studio, crie um Projeto e então procure a pasta desse projeto e coloque os arquivos do código lá. Então, use CTRL+F5 para rodar o código no ambiente.
 
 --------------------------------------------------------------------------------------------------------------
 

@@ -6,9 +6,13 @@ O código funcionou como esperado em três ambientes: **Terminal do Linux**, **V
 
 **Terminal do Linux (mais recomendado)**
 
-Para rodar neste ambiente, entre na pasta "my_program" e execute a seguinte linha de código no terminal:
+Para rodar neste ambiente, entre na pasta "my_program" e execute a seguinte linha de código no terminal para compilar o código:
 
 `g++ main.cpp contaBancaria.cpp transferencia.cpp -o main`
+
+Após isso, deve gerar um arquivo executável e para rodar ele, digite o seguinte comando no terminal:
+
+`./main`
 
 --------------------------------------------------------------------------------------------------------------
 
